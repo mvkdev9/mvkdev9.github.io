@@ -5,7 +5,7 @@
   "homepage": "https://mvkdev.com",
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
     "deploy": "npm run build && gh-pages -d out"
   },
