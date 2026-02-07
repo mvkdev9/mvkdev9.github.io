@@ -15,6 +15,7 @@ export const socials = {
         username: "mvkdev9",
         url: "https://github.com/mvkdev9"
     },
+    email: "mvkdev9@gmail.com",
     buymeacoffee: {
         username: "mvkdev",
         url: "",

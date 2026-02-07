@@ -1,22 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Syne, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const syne = Syne({
+  variable: "--font-syne",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const plusJakartaSans = Plus_Jakarta_Sans({
+  variable: "--font-plus-jakarta",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "MVK Dev - $1M Journey",
-  description: "Follow MVK's journey to earn $1M by 2030 through apps & content.",
+  title: "MVK Dev | Building the Future",
+  description: "Portfolio of MVK - Developer, Indie Hacker, and Solo Founder.",
 };
 
 export default function RootLayout({
@@ -27,8 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${syne.variable} ${plusJakartaSans.variable} antialiased bg-[#0F172A] text-[#F8FAFC] font-body`}
       >
+        <div className="fixed inset-0 pointer-events-none opacity-[0.03] z-[9999] bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
         <Navbar />
         {children}
         <Footer />

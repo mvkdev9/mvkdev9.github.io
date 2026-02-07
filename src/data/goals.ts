@@ -1,111 +1,81 @@
-import { FaApple, FaDesktop, FaDollarSign, FaGlobeAmericas, FaHome, FaLaptop, FaMapMarkedAlt, FaMobileAlt, FaRunning, FaTree, FaUsers } from "react-icons/fa";
+import { FaDollarSign, FaGlobeAmericas, FaMobileAlt, FaRunning, FaUsers } from "react-icons/fa";
 
 export const goals = [
   {
     "id": 1,
     "title": "Build and Publish 100 Mobile Apps",
-    "description": "Launch 100 mobile apps to generate revenue and experience.",
+    "description": "Master product execution by shipping 100 times. Quantity leads to quality.",
+    "href": "/apps",
     color: "#4F46E5", // Indigo 600
     icon: FaMobileAlt,
     "progress": 0,
     "subtasks": [
-      "Publish first 10 apps",
-      "Reach 50 apps milestone",
-      "Optimize monetization",
-      "Hit 100 apps published"
+      "Ship first 5 MVP apps",
+      "Reach 25 published apps",
+      "Scale & Optimize: Cross 50 apps",
+      "Mastery: Complete the 100-app saga"
     ]
   },
   {
     "id": 2,
-    "title": "Make a Million Dollars",
-    "description": "Generate $1M through freelancing, content, and apps.",
-    color: "#16A34A", // Green 600
+    "title": "Earn $1,000,000 Revenue",
+    "description": "Building a million-dollar business from scratch with total transparency.",
+    "href": "/revenue",
+    color: "#a855f7", // Purple 500
     icon: FaDollarSign,
-    "progress": 1,
-    "wins": [
-      "Saved $10K from 4years of salary (2021-2025)",
-    ],
+    "progress": 0,
     "subtasks": [
-      "Earn $1K/month",
-      "Earn $5K/month",
-      "Cross $100K in total revenue",
-      "Hit $1M milestone"
+      "Clear $30K debt (Zero Base)",
+      "Financial Stability: Earn $2K/month",
+      "Scaling: Cross $100K total revenue",
+      "Asset Building: Cross $200K (Unlock Property)",
+      "Legacy: Hit $1M total revenue milestone"
     ]
-  }, {
+  }, 
+  {
     "id": 3,
-    "title": "Reach 1M Subscribers",
+    "title": "Reach 1M Community",
+    "description": "Growing a tribe of a million indie hackers and dreamers.",
+    "href": "/community",
     color: "#E11D48", // Rose 600
     icon: FaUsers,
-    "description": "Grow personal brand on YouTube, Instagram, Twitter.",
     "progress": 0,
-    "subtasks": ["1000 subs", "10k", "100k", "1M"]
+    "subtasks": [
+      "First 1,000 True Fans",
+      "Influence: Reach 10,000 followers",
+      "Authority: Reach 100,000 members",
+      "Impact: Cross 500,000 reach",
+      "Army: Hit 1,000,000 subscribers"
+    ]
   },
-
   {
     "id": 4,
     "title": "Run a Marathon",
-    "description": "Train and complete a full marathon.",
+    "description": "The ultimate test of physical and mental endurance.",
+    "href": "/marathon",
     color: "#F97316", // Orange 500
     icon: FaRunning,
     "progress": 0,
-    "subtasks": ["Run 5K", "Run 10K", "Run Half Marathon", "Run Full Marathon"]
+    "subtasks": [
+      "Habit: Run 3x week for 30 days",
+      "Endurance: Run first 10K non-stop",
+      "Milestone: Complete Half Marathon (21.1km)",
+      "Glory: Complete Full Marathon (42.2km)"
+    ]
   },
   {
     "id": 5,
-    "title": "Travel Every State in India",
-    "description": "Explore the culture, food, and people of all Indian states.",
-       color: "#0EA5E9", // Sky 500
-    icon: FaMapMarkedAlt,
-    "progress": 0,
-    "subtasks": ["South India", "North India", "West India", "North-East India"]
-  },
-  {
-    "id": 6,
-    "title": "Travel 10 Countries",
-    color: "#8B5CF6", // Violet 500
+    "title": "Global Exploration",
+    "description": "Exploring all of India and 10 countries across the globe.",
+    "href": "/travel",
+    color: "#0EA5E9", // Sky 500
     icon: FaGlobeAmericas,
-
-    "description": "Visit at least 10 countries across continents.",
     "progress": 0,
-    "subtasks": ["Get passport", "Plan travel", "Start with 1 country"]
-  },
-  {
-    "id": 7,
-    "title": "Own a House",
-    "description": "Buy a comfortable, modern house for personal use.",
-    color: "#A16207", // Amber 700
-    icon: FaHome,
-    "progress": 0,
-    "subtasks": ["Research locations", "Save down payment", "Finalize purchase"]
-  },
-  {
-    "id": 8,
-    "title": "Own 1 Acre of Land",
-    "description": "Invest in land for long-term security and sustainability.",
-    color: "#22C55E", // Green 500
-    icon: FaTree,
-    "progress": 0,
-    "subtasks": ["Find ideal location", "Set budget", "Purchase land"]
-  },
-
-
-  {
-    "id": 9,
-    "title": "Own an iPhone and Apple Watch",
-    "description": "Buy the latest iPhone and Apple Watch as a milestone reward.",
-    color: "#111827", // Gray 900
-    icon: FaApple,
-    "progress": 0,
-    "subtasks": ["Save ₹50K", "Buy iPhone", "Buy Apple Watch"]
-  },
-  {
-    "id": 10,
-    "title": "Own a PC and MacBook",
-    "description": "Set up an ideal productivity environment with both devices.",
-    color: "#334155", // Slate 700
-    icon: FaDesktop, // or FaLaptop for MacBook
-    secondaryIcon: FaLaptop, //
-    "progress": 0,
-    "subtasks": ["Buy PC", "Buy latest MacBook"]
+    "subtasks": [
+      "National Mastery: Visit 14/28 Indian States",
+      "Full Circle: Visit all 28 Indian States",
+      "Global: First 3 International trips",
+      "Explorer: Visit 10 countries total"
+    ]
   }
 ]
