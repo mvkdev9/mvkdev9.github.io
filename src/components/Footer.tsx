@@ -2,31 +2,38 @@ import { socials } from '@/data/socials';
 import { FaGithub, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
-      const {instagram, twitter, github, youtube, buymeacoffee} = socials;
+  const { instagram, twitter, github, youtube } = socials;
+  
   return (
-    <section className="py-16 text-center">
-        <h2 className="text-2xl font-semibold mb-4">Join & Support My Journey</h2>
-        <p className="text-gray-600 mb-6">
-          Follow, share, or even sponsor me if you like what I&apos;m doing.
-        </p>
-        <div className="flex justify-center gap-4 flex-wrap">
-          <a href={instagram.url} target="_blank" className="underline">
-            <FaInstagram className="inline mr-1" />
+    <footer className="py-20 border-t border-[#334155] mt-20">
+      <div className="max-w-4xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+        <div>
+          <h3 className="text-xl font-bold mb-2">MVK<span className="text-cta">.</span>DEV</h3>
+          <p className="text-gray-400 text-sm max-w-xs">
+            Building 100 apps and sharing the journey. Join me as I build the future.
+          </p>
+        </div>
+
+        <div className="flex gap-6 items-center">
+          <a href={github.url} target="_blank" className="text-gray-400 hover:text-white transition-colors text-2xl">
+            <FaGithub />
           </a>
-          <a href={youtube.url} target="_blank" className="underline">
-            <FaYoutube className="inline mr-1" />
+          <a href={twitter.url} target="_blank" className="text-gray-400 hover:text-white transition-colors text-2xl">
+            <FaTwitter />
           </a>
-          <a href={twitter.url} target="_blank" className="underline">
-            <FaTwitter className="inline mr-1" />
+          <a href={instagram.url} target="_blank" className="text-gray-400 hover:text-white transition-colors text-2xl">
+            <FaInstagram />
           </a>
-           <a href={github.url} target="_blank" className="underline">
-            <FaGithub className="inline mr-1" />
-          </a>
-          <a href={buymeacoffee.url} target="_blank" className="underline">
-            Buy Me a Coffee
+          <a href={youtube.url} target="_blank" className="text-gray-400 hover:text-white transition-colors text-2xl">
+            <FaYoutube />
           </a>
         </div>
-      </section>
+      </div>
+      
+      <div className="mt-12 text-center text-gray-500 text-xs">
+        © {new Date().getFullYear()} MVK Dev. All rights reserved.
+      </div>
+    </footer>
   );
 };
 
